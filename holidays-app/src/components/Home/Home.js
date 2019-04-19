@@ -1,4 +1,8 @@
 import React from 'react';
+import "./Home.css";
+
+/* Dependency-Related Imports */
+import { Link } from "react-router-dom";
 
 /*
   Goals for this component:
@@ -13,10 +17,21 @@ import React from 'react';
 const Home = () => {
   return (
     <div className = "home-component-wrapper">
-      <div calssName = "banner-wrapper"> {/* This has the background-image in css */}
-        <h3 className = "banner-title">Time for the Holidays</h3>
+
+      <div className = "banner-wrapper"> {/* This has the background-image in css */}
+
+        <div className = "banner-text">
+          <h1 className = "banner-title">Time for the Holidays</h1>
+          <p className = "banner-description">
+            Don't know all the public holidays and observed holidays? Say no more! With insert_name_here
+            you can search over 200 different countries to find all the holidays possible!
+          </p>     
+          <Link to = "/calendar" className = "link-btn">Get Started</Link>
+        </div>
+        
         <div className = "banner-overlay"></div> {/* This will be the color overlay on top of the banner image */}
       </div>
+
     </div>
   );
 }
