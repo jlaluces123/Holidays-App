@@ -28,3 +28,38 @@
 .banner-description {
   line-height: 1.6;
 }
+
+
+
+
+
+
+
+
+.features-icon-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 5%;
+}
+
+.feature-box {
+  display: flex;
+  justify-content: center;
+}
+
+.feature-body {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding-left: 20px;
+}
+
+.feature-title {
+  margin-top: 11px;
+}
+
+.feature-description {
+  margin: 0;
+  width: 80%;
+}
